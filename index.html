@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Profile Card with Image</title>
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="form-container">
+      <h2>Create Your Profile Card</h2>
+      <form id="profileForm">
+        <div class="input-box">
+          <label for="name">Name</label>
+          <input type="text" id="name" placeholder="Enter your name" required>
+        </div>
+
+        <div class="input-box">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="Enter your email" required>
+        </div>
+
+        <div class="input-box">
+          <label for="phone">Phone</label>
+          <input type="text" id="phone" placeholder="Enter your phone number" required>
+        </div>
+
+        <div class="input-box">
+            <label>LinkedIn:</label>
+            <input type="text" id="linkedin" placeholder="paste handle"  class="fa-brands fa-linkedin"></i> 
+        </div>
+
+        <div class="input-box">
+            <label>GitHub:</label>
+            <input type="text" id="github" placeholder="paste handle" class="fa-brands fa-square-github"></i> 
+        </div>
+
+        <div class="input-box">
+          <label for="image">Profile Image</label>
+          <input type="file" id="image" accept="image/*" required>
+        </div>
+
+        <button type="submit" class="btn">Create Profile</button>
+      </form>
+    </div>
+
+    <div id="profileCard" class="profile-card hidden">
+        <div class="header">
+          <img id="profileImage" class="image" alt="Image">
+        </div>
+        <div class="profile-body">
+          <h3 id="Name"></h3>
+          <p id="Email"></p>
+          <p id="Phone"></p>
+          <p id="linkedin"></p>
+          <p id="github"></p>
+        </div>
+      </div>
+
+   
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
